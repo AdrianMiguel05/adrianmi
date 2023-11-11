@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'API9ISC22.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'prueba_29yu',
-        'USER': 'adrian',
-        'PASSWORD': 'tvLxeUpXnEw4yEoSrfCbGVXi8mWb8CWv',
+        'NAME': 'ejemplo_p0n7',
+        'USER': 'ejemplo_p0n7_user',
+        'PASSWORD': '75XpuGWaiKezOJn7lk1r49mDqAXvbedV',
         'HOST': 'oregon-postgres.render.com',   # O la dirección de tu servidor PostgreSQL
         'PORT': '5432',            # Deja en blanco para usar el puerto predeterminado (5432)
     }
