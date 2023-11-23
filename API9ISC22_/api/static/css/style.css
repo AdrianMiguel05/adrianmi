@@ -57,7 +57,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #777373; }
+  background-color: #fff; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -417,7 +417,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #eee5e9;
+  color: #e83e8c;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -1869,7 +1869,7 @@ textarea.form-control {
   font-size: 0.875rem;
   line-height: 1.5;
   color: #fff;
-  background-color: rgba(53, 195, 220, 0.9);
+  background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem; }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {

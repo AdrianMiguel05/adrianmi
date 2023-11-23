@@ -93,7 +93,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #212529;
-  background-color: #789de4;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -1324,20 +1324,20 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #2a8cee;
+  border-top: 1px solid #e9ecef;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #2a8cee;
+  border-bottom: 2px solid #e9ecef;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #2a8cee;
+  border-top: 2px solid #e9ecef;
 }
 
 .table .table {
-  background-color: #f31111;
+  background-color: #fff;
 }
 
 .table-sm th,
@@ -1346,12 +1346,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #0b0c0c;
+  border: 1px solid #e9ecef;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #0b0c0c;
+  border: 1px solid #e9ecef;
 }
 
 .table-bordered thead th,
