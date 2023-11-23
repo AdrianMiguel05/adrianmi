@@ -151,4 +151,3 @@ def Enc(request):
     context = {**grafica_data, **tuvista_data, **tuvista_data2}
     return render (request, 'encu.html',context)
 
-

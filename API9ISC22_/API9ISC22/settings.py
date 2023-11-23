@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     
     'api',
     'rest_framework',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -87,7 +88,6 @@ DATABASES = {
         'PORT': '5432',            # Deja en blanco para usar el puerto predeterminado (5432)
     }
 }
-
 
 
 
