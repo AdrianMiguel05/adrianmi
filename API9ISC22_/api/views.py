@@ -9,6 +9,7 @@ from django.template.loader import render_to_string
 from django.http import HttpResponse
 from .models import Respuestaschatbot
 
+
 # Create your views here.
 class Home(APIView):
     template_name = "index.html"
@@ -150,4 +151,32 @@ def Enc(request):
     # Combina los contextos de ambas vistas en un solo diccionario
     context = {**grafica_data, **tuvista_data, **tuvista_data2}
     return render (request, 'encu.html',context)
+
+# nombre_de_tu_app/views.py
+from django.shortcuts import render
+import requests
+
+def buscar_lugares(request):
+    # Coloca tu código de interacción con la API aquí
+    # Puedes utilizar las credenciales de Foursquare desde tu configuración de Django
+    CLIENT_ID = 'GPWZSBA0MXMOVJWCDR1VMQX5DJRUZ1NIKUELRBU0BSTYN2BC'
+    CLIENT_SECRET = '2URCHROXEWTHDFRCXY13IVRVS4YSPPI5LI251C00ZM3ZPLNI'
+
+    base_url = 'https://api.foursquare.com/v2/venues/search'
+    params = {
+        'client_id': CLIENT_ID,
+        'client_secret': CLIENT_SECRET,
+        'v': '20220101',
+        'near': 'Nueva York',
+        'query': 'restaurante',
+    }
+
+    response = requests.get(base_url, params=params)
+    data = response.json()
+
+    # Procesa los resultados como desees
+    lugares = data['response']['venues']
+
+    return render(request, 'api/index.html', {'lugares': lugares})
+
 
