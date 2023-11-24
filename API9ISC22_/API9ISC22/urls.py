@@ -18,7 +18,7 @@ from django.urls import path
 from api.views import Home, About, Blog, Contact, Elements, Portfolio, Services, Single
 from api import views
 from django.urls import path
-from api import buscar_lugares 
+
 
 urlpatterns = [
   
@@ -36,5 +36,5 @@ urlpatterns = [
      path('logout/',views.signout, name='logout'),
      path('enviar_correo/<str:correo>/<str:usuario>/<str:contra>/', views.enviar_correo, name='enviar_correo'),
      path('encu/', views.Enc, name='encu'),
-    path('buscar/', buscar_lugares, name='buscar_lugares'),
+    
 ]

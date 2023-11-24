@@ -33,8 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     
     'api',
+    'pytest',
     'rest_framework',
-    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
