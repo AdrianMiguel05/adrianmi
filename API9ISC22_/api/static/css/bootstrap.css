@@ -23,7 +23,7 @@
   }
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #4315ec;
     page-break-inside: avoid;
   }
   thead {
@@ -54,7 +54,7 @@
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #459df0 !important;
   }
   .table-bordered th,
   .table-bordered td {
@@ -93,7 +93,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #49e61a;
 }
 
 [tabindex="-1"]:focus {
