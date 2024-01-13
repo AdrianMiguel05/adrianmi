@@ -1,0 +1,19 @@
+#map {
+	height: 600px;
+	width: 100%;
+}
+
+body {
+        background-image: url('..bg-01.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200%;
+        font-family: 'Numans', sans-serif;
+}
+    
+.container {
+        
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+}

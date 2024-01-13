@@ -15,10 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from api.views import Home, About, Blog, Contact, Elements, Portfolio, Services, Single
+from api.views import Home, About, Blog, Contact, Elements, Portfolio, Services, Single, mapa
 from api import views
-from django.urls import path
-
 
 urlpatterns = [
   
@@ -33,7 +31,10 @@ urlpatterns = [
      path('single/', Single.as_view(),name='single'),
      path('signin/', views.signin,name='signin'),
      path('signup/', views.signup,name='signup'),
+     path('mapa/', mapa, name='mapa'),
      path('logout/',views.signout, name='logout'),
      path('enviar_correo/<str:correo>/<str:usuario>/<str:contra>/', views.enviar_correo, name='enviar_correo'),
-     path('index', Home.as_view(),name='index'),
 ]
+# urls.py
+
+

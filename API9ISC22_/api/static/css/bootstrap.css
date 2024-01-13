@@ -23,7 +23,7 @@
   }
   pre,
   blockquote {
-    border: 1px solid #4315ec;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
   thead {
@@ -54,7 +54,7 @@
   }
   .table td,
   .table th {
-    background-color: #459df0 !important;
+    background-color: #fff !important;
   }
   .table-bordered th,
   .table-bordered td {
@@ -81,19 +81,35 @@ html {
 @-ms-viewport {
   width: device-width;
 }
+#map {
+	height: 600px;
+	width: 100%;
+}
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
 body {
+  background-image: url('../bg-01.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 200%;
+        
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #212529;
-  background-color: #49e61a;
+  
+}
+
+
+.container {
+        
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 [tabindex="-1"]:focus {
@@ -1324,20 +1340,20 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid #2a8cee;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #e9ecef;
+  border-bottom: 2px solid #2a8cee;
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #e9ecef;
+  border-top: 2px solid #2a8cee;
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #f31111;
 }
 
 .table-sm th,
@@ -1346,12 +1362,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #e9ecef;
+  border: 1px solid #0b0c0c;
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #e9ecef;
+  border: 1px solid #0b0c0c;
 }
 
 .table-bordered thead th,

@@ -7,8 +7,6 @@ from django.db import IntegrityError
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.http import HttpResponse
-from .models import Respuestaschatbot
-
 
 # Create your views here.
 class Home(APIView):
@@ -122,3 +120,11 @@ def enviar_correo(request, correo, usuario, contra):
     send_mail(subject, '', from_email, recipient_list, html_message=contenido_correo)
     
     return redirect('signin')
+
+# views.py
+from django.shortcuts import render
+from django.conf import settings
+
+def mapa(request):
+    api_key = settings.GOOGLE_MAPS_API_KEY
+    return render(request, 'index.html', {'api_key': api_key})

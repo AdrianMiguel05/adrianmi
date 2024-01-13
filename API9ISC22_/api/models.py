@@ -2,16 +2,10 @@ from django.db import models
 
 # Create your models here.
 
-class Respuestaschatbot(models.Model):
-    marca_temporal = models.DateTimeField()
-    nombre_completo = models.CharField(max_length=100)
-    pregunta1 = models.CharField(max_length=2)
-    pregunta2 = models.TextField()
-    pregunta3 = models.CharField(max_length=10)
-    pregunta4 = models.TextField()
-    pregunta5 = models.TextField()
-    pregunta6 = models.CharField(max_length=20)
-    pregunta7 = models.CharField(max_length=10)
+class Base(models.Model):
+    Nombre = models.CharField(max_length=50)
+    Apellido = models.CharField(max_length=50)
+    Correo = models.CharField(max_length=50)
+    Contraseña = models.CharField(max_length=50)
 
-    def _str_(self):
-        return str(self.nombre_completo)
+
